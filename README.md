@@ -1,1 +1,0 @@
-This is my project for the Module 18 design challenge. We created this website for a fictional coffee company called Gulp Roast.
