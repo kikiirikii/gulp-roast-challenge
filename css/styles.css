@@ -1,0 +1,545 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit
+}
+
+  .topbar {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #082B59;
+    color: #FFFFFF;
+    border-bottom: 0.5rem solid #D98555
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0rem 2rem;
+  }
+  
+  .navigation {
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .topnavlink {
+    margin: 0;
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .fa-mug-hot, .fa-fire-flame-curved, .fa-square-phone {
+    padding: 0rem 0.75rem;
+  }
+
+  .mainbackground {
+    background: #ffffff url("../Media/Images/gulp-bottom-beans.jpg") repeat-x bottom;
+    padding-bottom: 300px;
+  }
+
+  .container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutus {
+    margin: 0rem 0rem 2rem 0rem;
+    color: #131D26;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .articletext {
+    color: #131D26;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .articlelink {
+    color: #082B59
+  }
+  
+  .articlelink:visited {
+    color: #D98555;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 112px;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #59331D;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .buttonlink {
+    display: block;
+    padding: 1rem;
+    color: #f2f2f2;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .aboutimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  picture img {
+    border-radius: 10px;
+  }
+
+  .ourproducts {
+    margin: 2rem;
+    color: #131D26;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .productscontainer {
+    margin: 0rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .producttitle {
+    margin: 2rem 0rem 0.5rem 0rem;
+    color: #131D26;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+  }
+
+  .producttext {
+    margin: 0rem 0rem 2rem 0rem;
+    color: #131D26;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  .productimg1 {
+    display: flex;
+    justify-content: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .productdscrpt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .productimg2 {
+    display: flex;
+    justify-content: center;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .productdscrpt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  .productimg3 {
+    display: flex;
+    justify-content: center;
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+
+  .productdscrpt3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+
+  .contactcontainer {
+    margin: 2rem;
+    padding: 0rem 2rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .contactus {
+    margin: 0rem 0rem 2rem 0rem;
+    color: #131D26;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .contactinfo {
+    color: #131D26;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  .contactarticle {
+    grid-column: 1/2;
+  }
+
+  .menuimg {
+    padding: 1rem 0rem;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #082B59;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .footertext1 {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0rem 1rem 1rem 1rem;
+    line-height: 3;
+  }
+
+  .footertext2 {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem;
+    line-height: 3;
+  }
+  
+  .bottomnav {
+    margin: 1rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .bottomnavlink {
+    margin: 0rem 1.5rem;
+    display: block;
+    color: #f2f2f2;
+    padding: 1rem;
+  }
+  
+  .fa-square-facebook, .fa-square-twitter, .fa-square-instagram {
+    font-size: 32px;
+  }
+
+@media (min-width: 768px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 1rem;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-row: 2/3;
+    grid-column: 3/7;
+  }
+
+  .logo {
+    grid-row: 1/2;
+    grid-column: 4/6;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutarticle {
+    margin: 0rem 4rem 0rem 0rem;
+  }
+
+  .productscontainer {
+    margin: 0rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+  }
+
+  .producttitle {
+    margin: 0rem 0rem 0.5rem 0rem;
+    color: #131D26;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+  }
+
+  .producttext {
+    margin: 0rem;
+    color: #131D26;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  .productimg1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .productdscrpt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .productimg2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .productdscrpt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .productimg3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .productdscrpt3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+
+  .contactcontainer {
+    margin: 2rem;
+    padding: 0rem 2rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 4rem;
+  }
+
+  .contactarticle {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .menuimg {
+    padding: 1rem 0rem;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 1rem;
+  }
+
+  .navigation {
+    grid-row: 2/3;
+    grid-column: 8/13;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .topnavlink:hover {
+    color: #D98555
+  }
+  
+  .topnavlink:focus {
+    color: #D98555;
+    border: 2px solid #D98555;
+  }
+
+  .logo {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutarticle {
+    margin: 0rem 4rem 0rem 0rem;
+  }
+
+  .articlelink:hover {
+    color: #D98555;
+  }
+
+  .button:hover, .buttonlink:hover {
+    background-color: #082B59;
+    border-radius: 10px;
+  }
+
+  .bottomnavlink:hover {
+    color: #D98555;
+  }
+
+  .productscontainer {
+    margin: 0rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+  }
+
+  .producttitle {
+    margin: 0rem 0rem 0.5rem 0rem;
+    color: #131D26;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+  }
+
+  .producttext {
+    margin: 0rem;
+    color: #131D26;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+
+  .productimg1 {
+    display: flex;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .productdscrpt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .productimg2 {
+    display: flex;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  .productdscrpt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .productimg3 {
+    display: flex;
+    align-items: center;
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .productdscrpt3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+
+  .contactcontainer {
+    margin: 2rem;
+    padding: 0rem 2rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 6rem;
+  }
+
+  .contactarticle {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .menuimg {
+    padding: 1rem 0rem;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
