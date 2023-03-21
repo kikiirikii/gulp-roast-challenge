@@ -1,16 +1,54 @@
+/*applied to all elements*/
 body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
 
 html {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit
+box-sizing: inherit
 }
+
+a {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+}
+
+h1 {
+  margin: 0rem 0rem 2rem 0rem;
+  color: #131D26;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 2rem 0rem 0.5rem 0rem;
+  color: #131D26;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+}
+
+article {
+  color: #131D26;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+picture img {
+  border-radius: 10px;
+}
+
+.mainbackground {
+  background: #ffffff url("../media/images/gulp-bottom-beans.jpg") repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+/*applied to all elements*/
 
   .topbar {
     padding: 1rem;
@@ -47,45 +85,6 @@ html {
   
   .fa-mug-hot, .fa-fire-flame-curved, .fa-square-phone {
     padding: 0rem 0.75rem;
-  }
-
-/*applied to all elements*/
-
-  a {
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    color: #f2f2f2;
-  }
-
-  h1 {
-    margin: 0rem 0rem 2rem 0rem;
-    color: #131D26;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    margin: 2rem 0rem 0.5rem 0rem;
-    color: #131D26;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-  }
-
-  article {
-    color: #131D26;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
-  }
-
-  picture img {
-    border-radius: 10px;
-  }
-
-  /*applied to all elements*/
-
-  .mainbackground {
-    background: #ffffff url("../media/images/gulp-bottom-beans.jpg") repeat-x bottom;
-    padding-bottom: 300px;
   }
 
   .container {
